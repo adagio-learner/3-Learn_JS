@@ -20,6 +20,8 @@ console.log("-----variable using let-----");
 // let is Block scope and no redefination is allowed.
 {
     let a = 10;
+    a = "string";
+    a = true;
     console.log(a);
 }
 {
@@ -34,4 +36,4 @@ const big = 55;
 console.log(big);
 
 // big = 65;
-// console.log(big);
+// console.log(big);                         //TypeError: Assignment to constant variable.
