@@ -3,7 +3,7 @@ for(let i=0; i<5; i++){
     console.log(i+1);
 }
 
-console.log("Reverse Counting")
+console.log("Reverse Counting and Break")
 for(let i=5; i>0; i--){
     if (i==2) {
         break;
@@ -12,11 +12,17 @@ for(let i=5; i>0; i--){
     }
 }
 
-console.log()
+console.log("Continue")
 for(let i=0; i<5; i++){
     if(i==3){
         continue;
     }else(
         console.log(i+1)
     )
+}
+
+let j = 0;
+while(j<5){
+    console.log("Print by While Loop")
+    j++;
 }
