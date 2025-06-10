@@ -31,7 +31,11 @@ const getMultiplication = function(a, b){
     return a*b;
 }
 
-
+// Arrow function
+let getExp = (x, y) => {
+    let ans = x**y;
+    return ans;
+}
 
 
 
@@ -57,3 +61,5 @@ console.log("Full Name:",getMyName(7, 7));
 
 let multiplication = getMultiplication(2, 20);
 console.log("multiplication is:",multiplication)
+
+console.log("Print exponencial:",getExp(2, 10));
