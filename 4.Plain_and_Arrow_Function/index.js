@@ -11,19 +11,29 @@ function printCounting(){
 
 // num is the parmeter
 function printSquare(num){
-    console.log("Printing Square:",num);
+    console.log("Printing Square:",num**2);
 }
 
 // Return Function
 function getSum(a, b, c){
     let sum = a+b+c;
     return sum;
+    // What written after the return statement is unreachable statements
 }
 
 function getMyName(firstName, lastName) {
     let fullName = firstName+" "+lastName;
     return fullName;
 }
+
+// Function Expression
+const getMultiplication = function(a, b){
+    return a*b;
+}
+
+
+
+
 
 
 
@@ -43,4 +53,7 @@ console.log("Printing Sum:",ans);
 let yourName = getMyName("Walter", "White");
 console.log("Full Name:",yourName);
 
+console.log("Full Name:",getMyName(7, 7));
 
+let multiplication = getMultiplication(2, 20);
+console.log("multiplication is:",multiplication)
