@@ -9,9 +9,17 @@ function printCounting(){
     }
 }
 
+// num is the parmeter
+function printSquare(num){
+    console.log("Printing Square:",num);
+}
+
 
 // function use - function call
 sayMyName();
 
 printCounting()
+
+// 5 is the argument
+printSquare(5)
 
