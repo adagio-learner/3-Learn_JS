@@ -22,7 +22,21 @@ let arr = [1, 2, 3, 4, 5, 6, 7];
 // Array constructor
 let brr = new Array("adagio", 1, true);
 
-console.log(arr)
-console.log(brr)
-console.log(brr[0])
-console.log(brr[2])
+console.log(arr);
+console.log(brr[0]);
+console.log(brr[2]);
+
+// Build in function in array
+// push: insert at end
+// pop: remove at end
+// shift: remove first item
+// unshift: insert first item
+
+
+console.log(brr);
+brr.pop();
+brr.push("learner")
+console.log(brr);
+brr.shift()
+brr.unshift("ADAGIO")
+console.log(brr);
