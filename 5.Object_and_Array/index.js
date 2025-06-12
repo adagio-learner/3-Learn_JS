@@ -15,3 +15,14 @@ let obj = {
 
 console.log(obj);
 obj.greet();
+
+
+// Creation of arrays
+let arr = [1, 2, 3, 4, 5, 6, 7];
+// Array constructor
+let brr = new Array("adagio", 1, true);
+
+console.log(arr)
+console.log(brr)
+console.log(brr[0])
+console.log(brr[2])
