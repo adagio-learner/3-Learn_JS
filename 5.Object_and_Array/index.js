@@ -20,7 +20,7 @@ obj.greet();
 // Creation of arrays
 let arr = [1, 2, 3, 4, 5, 6, 7];
 // Array constructor
-let brr = new Array("adagio", 1, true);
+let brr = new Array("adagio", 1, true, false, "learner");
 
 console.log(arr);
 console.log(brr[0]);
@@ -31,12 +31,22 @@ console.log(brr[2]);
 // pop: remove at end
 // shift: remove first item
 // unshift: insert first item
-
+// slice: create new part from array
+// splice: change content of array by inserting, replacing, removing
 
 console.log(brr);
+
 brr.pop();
-brr.push("learner")
+brr.push("Learner")
 console.log(brr);
+
 brr.shift()
-brr.unshift("ADAGIO")
+brr.unshift("Adagio")
 console.log(brr);
+
+console.log(brr.slice(2,4))
+
+brr.splice(1, 3, "-")
+console.log(brr);
+
+
