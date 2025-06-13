@@ -51,7 +51,7 @@ console.log(brr);
 
 // Higher-order methods
 
-// map
+// Map
 let num = [ 10, 20, 30 ];
 
 let ansArray = num.map((number, index) => {
@@ -60,7 +60,7 @@ let ansArray = num.map((number, index) => {
 })
 console.log(ansArray);
 
-// filter
+// Filter
 let arrFil = [ 10, 20, 30, 11, 21, 44, 51 ]
 let evenArray = arrFil.filter((number) => {
     return number%2 === 0;
@@ -81,3 +81,10 @@ let numFilter = crr.filter((value) => {
     }
 })
 console.log(numFilter)
+
+// Reduce( accumulator, current)
+let drr = [ 10, 20, 30, 40 ];
+let sumByReduce = drr.reduce((acc, curr) => {
+    return acc + curr;
+}, 0)
+console.log(sumByReduce)
