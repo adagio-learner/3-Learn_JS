@@ -51,16 +51,16 @@ console.log(brr);
 
 // Higher-order methods
 
-// Map
+// map
 let num = [ 10, 20, 30 ];
 
 let ansArray = num.map((number, index) => {
-    console.log(`${index} : ${number + 1}`)
+    console.log(`Index = ${index} : Number = ${number + 1}`)
     return number*number
 })
 console.log(ansArray);
 
-// Filter
+// filter
 let arrFil = [ 10, 20, 30, 11, 21, 44, 51 ]
 let evenArray = arrFil.filter((number) => {
     return number%2 === 0;
@@ -82,9 +82,42 @@ let numFilter = crr.filter((value) => {
 })
 console.log(numFilter)
 
-// Reduce( accumulator, current)
+// reduce( accumulator, current)
 let drr = [ 10, 20, 30, 40 ];
 let sumByReduce = drr.reduce((acc, curr) => {
     return acc + curr;
-}, 0)
-console.log(sumByReduce)
+}, 0);
+console.log(sumByReduce);
+
+
+
+// forEach
+let frr = [ 10, 20, 30 ];
+frr.forEach((value, index) => {
+    console.log("Number: ", value, "Index: ", index);
+})
+
+// for-in
+for(let key in obj){
+    console.log(key, ":", obj[key]);
+}
+
+// for of
+let fullName = "adago-lerner";
+for(let val of fullName){
+    console.log(val);
+}
+
+// array with function
+let grr = [ 10, 20, 30, 40, 50 ];
+function getSum(grr){
+    let length = grr.length;
+    let sum = 0;
+    for(let index=0; index<length; index++){
+        sum = sum + grr[index];
+    }
+    return sum
+}
+
+let totalSum = getSum(grr);
+console.log(totalSum);
