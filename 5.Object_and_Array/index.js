@@ -89,7 +89,14 @@ let sumByReduce = drr.reduce((acc, curr) => {
 }, 0);
 console.log(sumByReduce);
 
+// sort
+let err = [ 5, 4, 52, 15, 56, 12, 54 ];
+// using a compare function
+err.sort((a, b) => a-b);
+console.log(err);
 
+// indexOf
+console.log(err.indexOf(2));
 
 // forEach
 let frr = [ 10, 20, 30 ];
