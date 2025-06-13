@@ -21,34 +21,42 @@ function sayMyName(firstName){
 
 // sayHello()
 // let sayHello = function (){
-//     console.log("Hello everyone and this is function by declaration")
-// }
-// // output: ReferenceError
-
-// const object1 = new Human();
-// class Human{ 
-// }
-// // output: ReferenceError
-
-function greet(){
-    console.log("Greeting of the day")
-}
-
-const arr = [
-    function(a, b){
-        return a+b;
-    },
-    function(a, b){
-        return a-b;
-    },
-    function(a, b){
-        return a*b;
-    },
-    function(a, b){
-        return a/b;
-    }
-];
-
-let first = arr[0];
-let ans = first(5, 10);
-console.log(ans)
+    //     console.log("Hello everyone and this is function by declaration")
+    // }
+    // // output: ReferenceError
+    
+    // const object1 = new Human();
+    // class Human{ 
+        // }
+        // // output: ReferenceError
+        
+        function greet(){
+            console.log("Greeting of the day")
+        }
+        
+        const arr = [
+            function(a, b){
+                return a+b;
+            },
+            function(a, b){
+                return a-b;
+            },
+            function(a, b){
+                return a*b;
+            },
+            function(a, b){
+                return a/b;
+            }
+        ];
+        
+        let first = arr[0];
+        let ans = first(5, 10);
+        console.log(ans)
+        
+        
+        console.log(greetFunction)
+        var greetFunction = function(){
+            console.log("greeting with function with variable declaration")
+        }
+        // // output: undefined
+        
