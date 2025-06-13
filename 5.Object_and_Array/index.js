@@ -26,7 +26,7 @@ console.log(arr);
 console.log(brr[0]);
 console.log(brr[2]);
 
-// Build in function in array
+// Build in function in array(array method)
 // push: insert at end
 // pop: remove at end
 // shift: remove first item
@@ -49,4 +49,15 @@ console.log(brr.slice(2,4))
 brr.splice(1, 3, "-")
 console.log(brr);
 
+// Higher-order methods
 
+// map
+let num = [ 10, 20, 30 ];
+
+let ansArray = num.map((number, index) => {
+    console.log(`${index} : ${number + 1}`)
+    return number*number
+})
+console.log(ansArray);
+
+// 
