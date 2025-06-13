@@ -60,4 +60,24 @@ let ansArray = num.map((number, index) => {
 })
 console.log(ansArray);
 
-// 
+// filter
+let arrFil = [ 10, 20, 30, 11, 21, 44, 51 ]
+let evenArray = arrFil.filter((number) => {
+    return number%2 === 0;
+    // if (number % 2 === 0) {
+    //     return true;
+    // }else{
+    //     return false;
+    // }
+});
+console.log(evenArray);
+
+let crr = new Array("adagio", 1, true, false, "learner");
+let numFilter = crr.filter((value) => {
+    if(typeof(value) === "string"){
+        return true;
+    }else{
+        return false;
+    }
+})
+console.log(numFilter)
