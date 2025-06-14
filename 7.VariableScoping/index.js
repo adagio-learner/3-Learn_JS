@@ -42,4 +42,5 @@ sayHello();
     // const myName = "Adagio-Learner"
     console.log(myName)
 }
-
+// console.log(myName)
+// // ReferenceError
