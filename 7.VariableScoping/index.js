@@ -34,3 +34,12 @@ function sayHello(){
 // // ReferenceError
 sayHello();
 
+
+
+// Block Scoped
+{
+    let myName = "Adagio-Learner"
+    // const myName = "Adagio-Learner"
+    console.log(myName)
+}
+
