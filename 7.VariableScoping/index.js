@@ -22,3 +22,15 @@ if (true){
 for(let i=0; i<2; i++){
     console.log(age+i);
 }
+
+
+
+// Function Scoped
+function sayHello(){
+    var fullName = "Earth"
+    console.log("Hello Planet",fullName);
+}
+// console.log(fullName);     
+// // ReferenceError
+sayHello();
+
