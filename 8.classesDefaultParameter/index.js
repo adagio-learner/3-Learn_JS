@@ -4,6 +4,18 @@ class Human {
     #weight = 80;     // private member
     height = 180;
 
+    constructor(newage, newWeight, newHeight){
+        this.age = newage;
+        this.#weight = newWeight;
+        this.Height = newHeight;
+    }
+
+
+
+    // behavior
+    walking(){
+        console.log("I am Walking with weight",this.#weight);
+    }
 
     #running(){
         console.log("I am Running");
@@ -20,3 +32,5 @@ class Human {
     }
 }
 
+let obj = new Human(50, 75, 100);
+console.log(obj.age);
