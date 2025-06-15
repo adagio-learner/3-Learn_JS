@@ -34,3 +34,7 @@ class Human {
 
 let obj = new Human(50, 75, 100);
 console.log(obj.age);
+
+// // SyntaxError
+// console.log(obj.#wight);
+console.log(obj.fetchWeight);
