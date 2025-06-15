@@ -38,3 +38,10 @@ console.log(obj.age);
 // // SyntaxError
 // console.log(obj.#wight);
 console.log(obj.fetchWeight);
+
+obj.walking();
+
+// // running is a private behavior
+// // TypeError
+// obj.running()
+
