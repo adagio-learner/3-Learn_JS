@@ -16,3 +16,6 @@ catch(err){
     console.log("I am inside catch block")
     console.log("Your error is here:",err)
 }
+finally{
+    console.log("I will run everytime, as i am finally block")
+}
