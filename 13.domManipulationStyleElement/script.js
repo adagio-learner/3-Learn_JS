@@ -10,4 +10,5 @@ secondElement.style.cssText ="background-color: #669bbc; color: white; padding: 
 
 
 
-
+let firstElement = document.querySelector("#fDiv");
+firstElement.setAttribute("class","divclass")
