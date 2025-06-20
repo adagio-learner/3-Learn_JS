@@ -12,3 +12,13 @@ secondElement.style.cssText ="background-color: #669bbc; color: white; padding: 
 
 let firstElement = document.querySelector("#fDiv");
 firstElement.setAttribute("class","divclass")
+firstElement.setAttribute("style","padding: 0.4rem")
+// setAttribute remove the whole style from firstElement,then add new attribute
+
+
+let fPara = document.getElementById("fPara");
+fPara.className;
+fPara.className = "Gohan, zeno"
+fPara.className;
+
+
