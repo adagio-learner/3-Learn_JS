@@ -7,3 +7,5 @@ function changeText(){
 let fPara = document.querySelector("#fPara");
 
 fPara.addEventListener("click", changeText);
+
+fPara.removeEventListener("click", changeText);
