@@ -31,3 +31,17 @@ const t4 = performance.now();
 
 console.log("total time taken by code 1: " + (t4-t3));
 
+
+
+// best and fast code by using documentFragment
+let fragment = document.createDocumentFragment();
+
+for(let i=1; i<=100; i++){
+    let para = document.createElement("p");
+    para.textContent = "this is the para created by documentFragment" + i;
+    // No reflow and NO repaint for the below line
+    fragment.appendChild(para);
+}
+
+// 1 reflow and 1 repaint will occur by below the line.
+document.body.appendChild(fragment);
