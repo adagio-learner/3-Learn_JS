@@ -18,7 +18,17 @@ firstElement.setAttribute("style","padding: 0.4rem")
 
 let fPara = document.getElementById("fPara");
 fPara.className;
-fPara.className = "Gohan, zeno"
+fPara.className = "Gohan zeno"
 fPara.className;
 
+
+
+// .classlist => get in the form of array
+firstElement.classList;
+firstElement.classList.add("thirdClass");
+firstElement.classList.remove("firstClass");
+firstElement.classList.toggle("secondClass");
+firstElement.classList.toggle("secondClass");
+firstElement.classList.contains("firstClass")
+firstElement.classList.contains("secondClass")
 
