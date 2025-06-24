@@ -1,6 +1,7 @@
 let firstPromise = new Promise( (resolve, reject) =>{
     console.log("adagio learner");
     resolve(1001);
+    // fulfill
 } );
 
 // let secondPromise = new Promise( (resolve, reject) =>{
@@ -19,3 +20,19 @@ let firstPromise = new Promise( (resolve, reject) =>{
 
     } );
 
+
+    let promise1 = new Promise((resolve, reject) => {
+        let success = true;
+        if(success) {
+            resolve("Promise Fullfilled");
+        }else{
+            reject("Promise Rejected")
+        }
+    })
+
+
+    promise1.then((message) => {
+        console.log("then message is " + message);
+    }).catch(error) => {
+        console.log("Error: " + error);
+    }
