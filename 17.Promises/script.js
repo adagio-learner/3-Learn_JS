@@ -21,7 +21,7 @@ let firstPromise = new Promise( (resolve, reject) =>{
     } );
 
 
-    let promise1 = new Promise((resolve, reject) => {
+    let fourthPromise = new Promise((resolve, reject) => {
         let success = true;
         if(success) {
             resolve("Promise Fullfilled");
@@ -31,7 +31,7 @@ let firstPromise = new Promise( (resolve, reject) =>{
     })
 
 
-    promise1.then((message) => {
+    fourthPromise.then((message) => {
         console.log("then message is " + message);
     }).catch((error) => {
         console.log("Error: " + error);
@@ -39,7 +39,20 @@ let firstPromise = new Promise( (resolve, reject) =>{
         console.log("this code will run in any condition")
     })
 
-    promise.all([promise1, firstPromise, thirdPromise])
-    .then(value) => {
-        console.log(value);
-    }
+
+let prompmise1 = new Promise((resolve, reject) => {
+    setTimeout(resolve, 1000, "First");
+})
+let prompmise2 = new Promise((resolve, reject) => {
+    setTimeout(resolve, 2000, "second");
+})
+let prompmise3 = new Promise((resolve, reject) => {
+    setTimeout(resolve, 4000, "third");
+})
+
+Promise.all([prompmise3, prompmise2, prompmise1])
+.then((values) => {
+    console.log(values);
+}).catch((error) => {
+    console.error("error:" + error);
+})
