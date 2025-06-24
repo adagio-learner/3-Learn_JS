@@ -33,6 +33,13 @@ let firstPromise = new Promise( (resolve, reject) =>{
 
     promise1.then((message) => {
         console.log("then message is " + message);
-    }).catch(error) => {
+    }).catch((error) => {
         console.log("Error: " + error);
+    }).finally((message) => {
+        console.log("this code will run in any condition")
+    })
+
+    promise.all([promise1, firstPromise, thirdPromise])
+    .then(value) => {
+        console.log(value);
     }
