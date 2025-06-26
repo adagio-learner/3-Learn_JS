@@ -7,3 +7,17 @@ async function getData() {
 }
 
 getData();
+
+
+// await
+
+
+// fetch API
+
+async function fetchApi() {
+    let response = await fetch();
+    // parse json -> async
+    let data =  await response.json();
+    console.log(data);
+}
+fetchApi();
