@@ -25,3 +25,16 @@ function outerFunction(){
     innerFunction();
 }
 outerFunction();
+
+
+function firstFunction(){
+    let name = "Adagio Learner";
+
+    function nestedFunction(){
+        console.log(name);
+    }
+    return nestedFunction;
+}
+let nested = firstFunction();
+
+nested();
