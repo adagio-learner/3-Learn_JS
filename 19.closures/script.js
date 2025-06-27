@@ -10,3 +10,18 @@ function init(){
     displayName();
 }
 init();
+
+
+// nested function
+function outerFunction(){
+    var name = "Adagio";
+    function innerFunction(){
+        let name = "Learner"
+        {
+            let name = "anything"
+        }
+        console.log(name);
+    }
+    innerFunction();
+}
+outerFunction();
